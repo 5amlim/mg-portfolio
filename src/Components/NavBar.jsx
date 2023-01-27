@@ -1,7 +1,9 @@
 export default function NavBar(){
     return(
         <div>
-            nav
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
         </div>
     )
 }
