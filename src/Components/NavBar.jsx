@@ -1,5 +1,5 @@
 import 'flowbite';
-
+import { Data } from '../Data/Data';
 
 export default function NavBar(){
     return(
@@ -9,8 +9,8 @@ export default function NavBar(){
             <nav class="p-3 border-gray-200 rounded bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="#" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">MG</span>
+                    <img src={Data.logo} class="h-6 mr-3 sm:h-10" alt="Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{Data.name}</span>
                 </a>
                 <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
